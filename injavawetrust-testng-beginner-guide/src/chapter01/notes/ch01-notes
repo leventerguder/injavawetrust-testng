@@ -1,0 +1,88 @@
+	
+	##### Getting Started ##### 
+	
+	Testing is an important part of software development and holds a key position
+	in the software development life cycle. Testing can be of multiple types such as
+	unit, integration, functional, manual, automation, and so on; it's a huge list.
+	TestNG is one of the most popular testing, or test automation frameworks in
+	Java, which is widely used nowadays.
+	
+	
+	#####  Testing and test automation ##### 
+	
+	Testing as you may know is the process of validating and verifying that a piece of software
+	or hardware is working according to the way it's expected to work.
+	Testing is a very important part of the software development life cycle (SDLC) as it helps in improving the quality
+	of the product developed.
+	
+	
+	Test automation, as the name suggests, refers to automating the testing process. This
+	can be done for different testing types and levels such as unit testing, integration testing,
+	functional testing, and so on, through different means either by coding or by using tools.
+	Test automation gives an advantage of running tests in numerous ways such as at regular
+	intervals or as part of the application build. This helps in identifying bugs at the initial phase
+	of development itself, hence reducing the product timeline and improving the product
+	quality.
+	
+	##### TestNG ##### 
+	
+	TestNG, where NG stands for "next generation" is a test automation framework inspired
+	by JUnit (in Java) and NUnit (in C#). It can be used for unit, functional, integration, and
+	end-to-end testing.
+	
+	TestNG was developed by Cedric Beust.
+	
+	TestNG is a testing framework.
+	It is written in Java and can be used with Java as well as with Java-related languages such
+	as Groovy. In TestNG, suites and tests are configured or described mainly through XML
+	files. By default, the name of the file is testng.xml, but we can give it any other name
+	if we want to.
+	
+	Parameterization of test methods is very easy using TestNG and it also provides an easy
+	method of creating data-driven tests.
+	
+	##### Features of TestNG ##### 
+	
+	-- Multiple Before and After annotation options: TestNG provides multiple kinds
+	of Before/After annotations for support of different setup and cleanup options.
+	
+	-- XML-based test configuration and test suite definition: Test suites in TestNG are
+	configured mainly using XML files. An XML file can be used to create suites using
+	classes, test methods, and packages, as well as by using TestNG groups.
+	
+	-- Dependent methods: This is one of the major features of TestNG where you can
+	tell TestNG to execute a dependent test method to run after a given test method.
+	You can also configure whether the dependent test method has to be executed
+	or not in case the earlier test method fails.
+	
+	-- Groups/group of groups: Using this feature you can assign certain test methods
+	into particular named groups and tell TestNG to include or exclude a particular
+	group in a test.
+	
+	-- Dependent groups: Like dependent methods, this feature allows test methods
+	belonging to one group being dependent upon another group.
+	
+	-- Parameterization of test methods: This feature helps users to pass parameter
+	values through an XML configuration file to the test methods, which can then
+	be used inside the tests.
+	
+	-- Data-driven testing: TestNG allows users to do data-driven testing of test methods
+	using this feature. The same test method gets executed multiple times based on
+	the data.
+	
+	-- Multithreaded execution: This allows execution of test cases in a multithreaded
+	environment. This feature can be used for parallel test execution to reduce
+	execution time or to test a multithreaded test scenario.
+	
+	-- Better reporting: TestNG internally generates an XML and HTML report by default
+	for its test execution. You can also add custom reports to the framework if required.
+	
+	-- Open API: TestNG provides easy extension of API, this helps in adding custom
+	extensions or plugins to the framework depending upon the requirement.
+	
+	
+	##### Installing TestNG onto Eclipse ##### 
+	Eclipse -> Help -> Eclipse MarketPlace -> TestNG for Eclipse
+	
+	
+	 
