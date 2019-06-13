@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Class Suite" verbose="1">
+	<test name="Test">
+		<classes>
+			<class name="chapter02.pack01.Test01" />
+			<class name="chapter02.pack02.Test01" />
+			<class name="chapter02.pack03.Test01" />
+		</classes>
+	</test>
+</suite>
+
+<!-- The preceding testng XML suite defines a test with three classes (one 
+	from each package). To add a class to your test suite just use a combination 
+	of classes and class tag as shown. Use the class tag with the attribute name 
+	having a value of the class name along with the package name (for example, 
+	chapter02.pack01.Test01) to add a test class to your test. -->

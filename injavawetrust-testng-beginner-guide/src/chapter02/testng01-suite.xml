@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="First Suite" verbose="1">
+	<test name="First Test">
+		<classes>
+			<class name="chapter02.Test01" />
+		</classes>
+	</test>
+	
+	<!-- Right Click -> Run As -> TestNG Suite -->
+</suite>

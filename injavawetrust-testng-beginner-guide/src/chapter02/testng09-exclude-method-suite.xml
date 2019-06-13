@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Exclude Method Suite" verbose="1">
+	<test name="Exclude Method Test">
+		<classes>
+			<class name="chapter02.pack01.Test01">
+				<methods>
+					<exclude name="firstTestMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+<!-- The preceding testng XML suite defines a class that needs to be considered 
+	for test execution and the test method that needs to be excluded from execution. 
+	To exclude a method from your test suite we have to use the tags methods 
+	and exclude under them to exclude a particular method from a test class. -->

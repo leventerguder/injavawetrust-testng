@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Method Suite" verbose="1">
+	<test name="Method Test">
+		<classes>
+			<class name="chapter02.pack01.Test01">
+				<methods>
+					<include name="firstTestMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+<!-- The preceding testng XML suite defines a class that needs to be considered 
+	for test execution and the test method that needs to be included for execution. 
+	To add methods to your test suite we have to use the tags methods and include/ 
+	exclude under them to add or remove particular methods from a test class. -->

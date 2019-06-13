@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regular Exp Suite" verbose="1">
+	<test name="Regular Exp Test">
+		<classes>
+			<class name="chapter02.pack04.Test01RegularExpression">
+				<methods>
+					<include name=".*Test.*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+<!-- The preceding testng XML suite is configured to consider only those 
+	test methods from a particular class whose name contains the word Test in 
+	it. The regular expression is considered by use of .* before and after the 
+	text. -->

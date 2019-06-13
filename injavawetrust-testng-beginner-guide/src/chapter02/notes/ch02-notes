@@ -1,0 +1,18 @@
+	
+	##### Understanding testng.xml #####
+	
+	testng.xml is a configuration file for TestNG. It is used to define test suites and tests
+	in TestNG. It is also used to pass parameters to test methods.
+	
+	testng.xml provides different options to include packages, classes, and independent test
+	methods in our test suite.
+	
+	TestNG allows you to do the following:
+	
+	 - Create tests with packages
+	 - Create tests using classes
+	 - Create tests using test methods
+	 - Include/exclude a particular package, class, or test method
+	 - Use of regular expression while using the include/exclude feature
+	 - Store parameter values for passing to test methods at runtime
+	 - Configure multithreaded execution options

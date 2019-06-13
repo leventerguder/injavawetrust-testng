@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" verbose="1">
+	<test name="FirstTest">
+		<classes>
+			<class name="chapter02.Test01" />
+		</classes>
+	</test>
+	<test name="SecondTest">
+		<classes>
+			<class name="chapter02.Test02" />
+		</classes>
+	</test>
+</suite>
+
+<!-- The XML file defines a suite with the name Suite. The suite contains 
+	two tests with names FirstTest and SecondTest respectively. These tests are 
+	configured to execute separate classes -->
+
+<!-- When the XML file is executed as a suite in TestNG, each class is executed 
+	by a separate test section of a suite. -->

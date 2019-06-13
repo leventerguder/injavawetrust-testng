@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Package Suite" verbose="1">
+	<test name="Package Test">
+		<packages>
+			<package name="chapter02.pack01" />
+			<package name="chapter02.pack02" />
+		</packages>
+	</test>
+</suite>
+
+<!-- The preceding testng XML suite defines a test with two packages -->

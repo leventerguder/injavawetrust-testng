@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Include Package Suite" verbose="1">
+	<test name="Include Package Test">
+		<packages>
+			<package name="chapter02.*">
+				<include name="chapter02.pack02" />
+			</package>
+		</packages>
+	</test>
+</suite>
+
+<!-- TestNG provides the flexibility to include or exclude tests while defining 
+	a test suite -->
+
+
+<!-- The preceding test suite defines a test, which includes all sub packages 
+	of the chapter02.examples package (defined by using regular expression chapter02.examples.*) 
+	and includes only a particular package from all the packages for test execution. 
+	This is done by using the include tag with the name attribute value as the 
+	package name that needs to be included (that is, chapter02.examples.pack02). 
+	This informs TestNG to include classes belonging to the included package 
+	for test execution. -->	

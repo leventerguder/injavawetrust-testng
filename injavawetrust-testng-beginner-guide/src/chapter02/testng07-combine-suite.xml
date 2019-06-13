@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Combine Suite" verbose="1">
+	<test name="Combine Test">
+		<packages>
+			<package name="chapter02.examples.pack01" />
+		</packages>
+		<classes>
+			<class name="chapter02.pack02.Test01" />
+			<class name="chapter02.pack03.Test01">
+				<methods>
+					<include name="firstTestMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+<!-- The preceding testng XML suite defines a test with a package (chapter02.examples.pack01) 
+	a particular class (chapter02.examples.pack02.Test01), and a particular test 
+	method (firstTestMethod under the class chapter02.examples.pack03.Test01) 
+	as part of the test suite. -->
