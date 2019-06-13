@@ -1,0 +1,132 @@
+	
+	##### Annotations #####
+	
+	Annotaions in TestNG
+	TestNG makes use of the same feature provided by Java to define its own annotations
+	and build an execution framework by using it.
+	
+	Before and After annotations are mainly used to execute a certain set of code before
+	and after the execution of test methods.
+	
+	TestNG provides five different kinds of Before and After annotation options, each of which
+	can be used depending upon the test requirements. The following are the different before
+	and after options provided by TestNG:
+	
+	- @BeforeSuite/@AfterSuite
+	- @BeforeTest/@AfterTest
+	- @BeforeGroups/@AfterGroups
+	- @BeforeClass/@AfterClass
+	- @BeforeMethod/@AfterMethod
+	
+	@BeforeSuite
+	@AfterSuite
+	The annotated method will be executed before and after any tests declared inside a TestNG suite.
+	
+	@BeforeTest
+	@AfterTest
+	The annotated method will be executed before and after each test section declared inside a TestNG suite.
+	
+	@BeforeGroups
+	@AfterGroups
+	These annotations are associated with groups feature in TestNG.
+	
+	@BeforeClass
+	@AfterClass
+	
+	BeforeClass annotated method is executed before any of the test method of a test class.
+	AfterClass annotated method is executed after the execution of every test methods of a test class are executed.
+	
+	@BeforeMethod
+	@AfterMethod
+	These annotated methods are executed before/after the execution of each test method.
+	
+	@DataProvider
+	Marks a method as a data providing method for a test method. 
+	The said method has to return an Object double array (Object[ ][ ]) as data.
+	
+	@Factory
+	Marks a annotated method as a factory that returns an array of class objects (Object[ ]).
+	These class objects will then be used as test classes by TestNG.
+	This is used to run a set of test cases with different values.
+	
+	@Listeners
+	Applied on a test class. Defines an array of test listeners classes extending org.testng.ITestNGListener.
+	Helps in tracking the execution status and logging purpose.
+	
+	@Parameters
+	This annotation is used to pass parameters to a test method. 
+	These parameter values are provided using the testng.xml configuration file at runtime.
+	
+	@Test
+	Marks a class or a method as a test method. If used at class level, 
+	all the public methods of a class will be considered as a test method.
+	
+	Before and After annotations are mainly used to execute a certain set of code
+	before and after the execution of test methods.
+	
+	TestNG provides five different kinds of Before and After annotation options,
+	each of which can be used depending upon the test requirements
+	
+	##### Before and AfterSuite #####
+	@BeforeSuite / @AfterSuite
+	@BeforeTest / @AfterTest
+	@BeforeGroups / @AfterGroups
+	@BeforeClass / @AfterClass
+	@BeforeMethod / @AfterMethod
+	
+	
+	##### Test annotation #####
+	Supported by the @Test annotation
+	
+	- alwaysRun 
+	Takes a true or false value. If set to true this method will always run even if its depending method fails.
+	
+	- dataProvider
+	The name of the data provider , which will provide data for data-driven testing to this method.
+	
+	- dataProviderClass
+	The class where TestNG should look for the data-provider method mentioned in the dataProvider attribute. 
+	By default its the current class or its base classes.
+	
+	- dependsOnGroups
+	Specifies the list of groups this method depends on.
+	
+	- dependsOnMethods
+	Specifies the list of methods this method depends on.
+	
+	- description
+	The description of this method.
+	
+	- enabled
+	Sets whether the said method or the methods inside the said class should be enabled for execution or not. 
+	By default its value is true.
+	
+	- expectedExceptions
+	This attribute is used for exception testing. This attribute specifies the list of exceptions this method is expected to throw. 
+	In case a different exception is thrown.
+	
+	- groups
+	List of groups the said method or class belongs to.
+	
+	- timeOut
+	This attribute is used for a time out test and specifies the time (in millisecs) this method should take to execute.
+	
+	
+	If a class is annotated by the Test annotation, TestNG will consider only the methods with public access modifiers as test methods. 
+	All the methods with other access modifiers will be neglected by TestNG.
+	
+	Disabling a test can be achieved in TestNG by setting the enable attribute of the Test annotation to false.
+	
+	
+	##### DataProvider ##### 
+	
+	One of the important features provided by TestNG is the DataProvider feature. It helps
+	the user to write data-driven tests, that means same test method can be run multiple
+	times with different datasets. DataProvider is the second way of passing parameters
+	to test methods. It helps in providing complex parameters to the test methods as it is
+	not possible to do this from XML.
+	
+	To use the DataProvider feature in your tests you have to declare a method annotated by
+	DataProvider and then use the said method in the test method using the dataProvider
+	attribute in the Test annotation.
+	

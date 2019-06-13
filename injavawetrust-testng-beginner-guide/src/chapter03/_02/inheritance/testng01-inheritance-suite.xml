@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Inheritance Suite" verbose="1">
+	<test name="Inheritance Test">
+		<classes>
+			<class name="chapter03._02.inheritance.Test01Inheritance" />
+		</classes>
+	</test>
+</suite>
+
+<!-- . As you can see, the report output of TestNG executes the parent class 
+	before annotated methods and then the child before annotated methods. After 
+	annotated methods, the child class method is executed and then the parent 
+	class. -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="First Suite" verbose="1">
+	<test name="First Test">
+		<classes>
+			<class name="chapter03._01.beforeafter.Test01BeforeAfter">
+				<methods>
+					<include name="testOneMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Second Test">
+		<classes>
+			<class name="chapter03._01.beforeafter.Test01BeforeAfter">
+				<methods>
+					<include name="testTwoMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- Before and After annotations are mainly used to execute a certain set 
+		of code before and after the execution of test methods. These are used to 
+		basically set up some variables or configuration before the start of a test 
+		execution and then to cleanup any of these things after the test execution 
+		ends. -->
+
+</suite>

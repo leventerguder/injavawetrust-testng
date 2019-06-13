@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Parameter test Suite" verbose="1">
+	<parameter name="suite-param" value="suite level parameter" />
+	<test name="Parameter Test one">
+		<classes>
+			<class name="chapter03._04.parameterization.Test01Parameter">
+				<methods>
+					<include name="prameterTestOne" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Parameter Test two">
+		<parameter name="test-two-param" value="Test two parameter" />
+		<classes>
+			<class name="chapter03._04.parameterization.Test01Parameter">
+				<methods>
+					<include name="prameterTestTwo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Parameter Test three">
+		<parameter name="suite-param"
+			value="overiding suite parameter" />
+		<parameter name="test-three-param"
+			value="test three parameter" />
+		<classes>
+			<class name="chapter03._04.parameterization.Test01Parameter">
+				<methods>
+					<include name="prameterTestThree" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- We created a test class with multiple methods that accepts parameters 
+		from TestNG. The parameter values are set at both suite and test level in 
+		the testng XML file. Any parameter value defined at the test level will override 
+		the value of a parameter, with same name, if defined at suite level. You 
+		can see this in test three for test method prameterTestThree. TestNG also 
+		provides an option to provide optional values for a parameter, this value 
+		will be used if parameter value is not found in the defined file. -->
+
+</suite>

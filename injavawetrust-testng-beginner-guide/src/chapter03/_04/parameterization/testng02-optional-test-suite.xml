@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Optional test Suite" verbose="1">
+	<test name="Optional Test one">
+		<classes>
+			<class name="chapter03._04.parameterization.Test02Optional" />
+		</classes>
+	</test>
+	<test name="Optional Test two">
+		<parameter name="optional-value" value="passed from xml" />
+		<classes>
+			<class name="chapter03._04.parameterization.Test02Optional" />
+		</classes>
+	</test>
+</suite>
