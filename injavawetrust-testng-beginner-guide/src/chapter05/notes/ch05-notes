@@ -1,0 +1,13 @@
+	
+	##### Dependencies #####
+	
+	dependency is a feature in TestNG that allows a test method to depend on
+	a single or a group of test methods. This will help in executing a set of tests to be executed
+	before a test method. Method dependency only works if the depend-on-method is part of
+	the same class or any of the inherited base class (that is, while extending a class).
+	
+	
+	The dependency can be configured for both test methods and also for groups. We can
+	even configure/define a dependency through the testng XML suite file. Use of regular
+	expressions is supported for groups and can be used for name-based search to add
+	groups to dependency.

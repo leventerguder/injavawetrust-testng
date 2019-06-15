@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regexpxmldependency Suite" verbose="1">
+	<test name="Regexp xml dependency Test">
+		<groups>
+			<dependencies>
+				<group name="test" depends-on="starts-with.*" />
+			</dependencies>
+		</groups>
+		<classes>
+			<class
+				name="chapter05._03.xmlbased.Test03RegularExpressionXmlDependency" />
+		</classes>
+	</test>
+</suite>
