@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Default Group Suite" verbose="1">
+	<test name="Default Group Test one">
+		<groups>
+			<run>
+				<include name="default-group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="chapter04._05.defaultgrouping.Test01DefaultGroup" />
+		</classes>
+	</test>
+	<test name="Default Group Test two">
+		<groups>
+			<run>
+				<include name="test-group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="chapter04._05.defaultgrouping.Test01DefaultGroup" />
+		</classes>
+	</test>
+
+	<!-- TestNG executed all the test methods of the class when the default-group 
+		tests were executed in the first test. Whereas, in the second test, only 
+		one method that belongs to the group test-group was executed. -->
+</suite>

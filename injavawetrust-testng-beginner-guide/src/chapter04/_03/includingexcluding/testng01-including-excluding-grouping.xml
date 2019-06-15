@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Exlude Group Suite" verbose="1">
+	<test name="Exclude Group Test">
+		<groups>
+			<run>
+				<include name="include-group" />
+				<exclude name="exclude-group" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="chapter04._03.includingexcluding.Test01ExcludeGroup" />
+		</classes>
+	</test>
+
+	<!-- TestNG also allows you to include and exclude certain groups from test 
+		execution. This helps in executing only a particular set of tests and excluding 
+		certain tests -->
+</suite>

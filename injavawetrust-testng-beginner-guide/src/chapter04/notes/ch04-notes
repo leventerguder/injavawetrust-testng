@@ -1,0 +1,16 @@
+	
+	##### Groups #####
+	
+	
+	In TestNG users can group multiple test methods into a named group. You can also
+	execute a particular set of test methods belonging to a group or multiple groups. This feature
+	allows the test methods to be segregated into different sections or modules. 
+	
+	For example, you can have a set of tests that belong to sanity test where as others may belong to regression
+	tests. You can also segregate the tests based on the functionalities/features that the test
+	method verifies. This helps in executing only a particular set of tests as and when required.
+	
+	
+	We can run test methods belonging to a certain group in mainly two ways:
+	Through Eclipse
+	Using the testng XML file

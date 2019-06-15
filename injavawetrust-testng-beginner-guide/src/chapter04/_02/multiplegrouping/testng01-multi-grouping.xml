@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Multi Group Suite" verbose="1">
+	<test name="Group Test one">
+		<groups>
+			<run>
+				<include name="group-one" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="chapter04._02.multiplegrouping.Test01MultiGrouping" />
+		</classes>
+	</test>
+	<test name="Group Test two">
+		<groups>
+			<run>
+				<include name="group-two" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="chapter04._02.multiplegrouping.Test01MultiGrouping" />
+		</classes>
+	</test>
+
+	<!-- TestNG allows a test method to belong to multiple groups. There is 
+		no limit on number of groups that a test may belong to. To assign a test 
+		method to multiple groups just provide the names of groups as comma-separated 
+		values to the groups attribute of the @Test annotation -->
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regular Exp. Group Suite" verbose="1">
+	<test name="Regular Exp. Test">
+		<groups>
+			<run>
+				<include name="include.*" />
+				<exclude name=".*exclude" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="chapter04._04.regularexpression.Test01RegularExpressionGroup" />
+		</classes>
+	</test>
+
+	<!-- The preceding XML contains a simple test in which all the groups with 
+		a name starting with include are included, whereas all the groups with name 
+		ending with exclude are excluded from your test execution. -->
+
+	<!-- To use regular expressions to include and exclude groups you have to 
+		use .* for matching names. In -->
+
+</suite>

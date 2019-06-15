@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Group of group Suite" verbose="1">
+	<test name="Group of group Test">
+		<groups>
+			<define name="include-group">
+				<include name="include-test-one" />
+				<include name="include-test-two" />
+				<!-- <include name="include-test-three" /> -->
+			</define>
+			<define name="exclude-group">
+				<include name="test-one-exclude" />
+				<include name="test-two-exclude" />
+			</define>
+			<run>
+				<include name="include-group" />
+				<exclude name="exclude-group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="chapter04._06.groupsofgroup.Test01GroupOfGroup" />
+		</classes>
+	</test>
+
+	<!-- Two groups of groups have been defined inside the test, and then these 
+		groups are used for test execution. The MetaGroup is created using the define 
+		tag inside the groups tag as shown in the previous code. The name of the 
+		new group is defined using the name attribute under the define tag. Groups 
+		are included and excluded from the new group by using the include and exclude 
+		tags. -->
+</suite>
