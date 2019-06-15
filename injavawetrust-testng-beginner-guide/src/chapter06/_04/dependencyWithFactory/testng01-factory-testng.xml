@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Factory suite" verbose="1">
+	<test name="Factory test" group-by-instances="true">
+		<classes>
+			<class
+				name="chapter06._04.dependencyWithFactory.Test01DependencyFactory" />
+		</classes>
+	</test>
+
+	<!-- To run the dependent methods according to the sequence, they are supposed 
+		to run a configuration attribute group-byinstance, which is set to true. -->
+
+</suite>

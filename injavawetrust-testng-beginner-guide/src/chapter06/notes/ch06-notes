@@ -1,0 +1,23 @@
+	
+	##### The Factory Annotation #####
+	
+	What is factory?
+	Sometimes we may need to run a set of tests with different data values. To achieve this
+	we may define a separate set of tests inside a suite in the testng XML and test the
+	required scenario. The problem with this approach is that, if you get an extra set of data,
+	you will need to redefine the test. TestNG solves this problem by providing the @Factory
+	annotation feature. Factory in TestNG defines and creates tests dynamically at runtime.
+	
+	The DataProvider feature can also be used with the @Factory annotation for creating tests
+	at runtime. This can be done by declaring the @Factory annotation on a constructor of a
+	class or on a regular method.
+	
+	
+		- DataProvider: A test method that uses DataProvider will be executed a
+	multiple number of times based on the data provided by the DataProvider.
+	The test method will be executed using the same instance of the test class
+	to which the test method belongs.
+	
+		- Factory: A factory will execute all the test methods present inside a test class
+	using a separate instance of the respective class.
+	
