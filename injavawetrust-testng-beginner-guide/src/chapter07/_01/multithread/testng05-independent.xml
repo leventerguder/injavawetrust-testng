@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Independent test Suite">
+	<test name="Independent test">
+		<classes>
+			<class name="chapter07._01.multithread.Test05ParallelIndependent" />
+		</classes>
+	</test>
+</suite>

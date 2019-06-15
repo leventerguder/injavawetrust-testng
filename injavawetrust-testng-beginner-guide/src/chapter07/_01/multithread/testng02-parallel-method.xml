@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test-method Suite" parallel="methods" threadcount="2">
+	<test name="Test-method test" group-by-instances="true">
+		<classes>
+			<class name="chapter07._01.multithread.Test02ParallelMethod" />
+		</classes>
+	</test>
+</suite>
+
+<!-- We have successfully created a test class, which is executed in multithreaded 
+	or parallel mode. Here, for executing the tests in parallel we have configured 
+	TestNG to run test methods in parallel by providing the value methods to 
+	the parallel attribute of suite. Also the test is configured to spawn two 
+	threads for the said test suite; this is done by providing the value 2 to 
+	the thread-count attribute at the suite level. The previous test result clearly 
+	shows that each test method and its respective before and after method is 
+	executed in a different thread. This is identified by the ID of the thread 
+	that is printed on the console. -->

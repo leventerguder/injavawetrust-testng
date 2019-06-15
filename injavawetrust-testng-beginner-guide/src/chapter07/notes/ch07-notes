@@ -1,0 +1,20 @@
+	
+	##### Parallelism #####
+	
+	Parallelism or multithreading in software terms is defined as the ability of the software,
+	operating system, or program to execute multiple parts or subcomponents of another
+	program simultaneously.
+	
+	Parallelism or multithreaded execution can provide a lot of advantages to the users.
+	The following are two:
+	
+		- Reduces execution time: As tests are executed in parallel, multiple tests get
+	executed simultaneously, hence reducing the overall time taken to execute the tests
+	
+		- Allows multithreaded tests: Using this feature, we can write tests to verify certain
+	multithreaded code in the applications
+	
+	This feature is vastly used by the QA industry for functional automation testing. This feature
+	helps QA guys configure their tests to be executed easily in multiple browsers or operating
+	systems simultaneously.
+	

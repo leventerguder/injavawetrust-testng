@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test-class Suite" parallel="classes" thread-count="2">
+	<test name="Test-class test">
+		<classes>
+			<class name="chapter07._01.multithread.Test03ParallelClassV1" />
+			<class name="chapter07._01.multithread.Test03ParallelClassV2" />
+		</classes>
+	</test>
+</suite>
+
+<!-- We have successfully created a test suite, which is executed in multithreaded 
+	or parallel mode. Here for executing each class in parallel we have configured 
+	TestNG by providing the value classes to the parallel attribute of suite. 
+	Also the test is configured to spawn two threads for the said test suite; 
+	this is done by providing the value 2 to the thread-count at the suite level. 
+	The previous test result clearly shows that each test class and its respective 
+	beforeClass and afterClass methods are executed in a different thread. This 
+	is identified by the id of the thread that is printed on the console. -->

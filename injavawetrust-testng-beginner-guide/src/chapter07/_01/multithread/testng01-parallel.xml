@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Simple Suite" parallel="methods" thread-count="2">
+	<test name="Simple test">
+		<classes>
+			<class name="chapter07._01.multithread.Test01Parallel" />
+		</classes>
+	</test>
+
+	<!-- The parallel be done for each class, each method, or for each test 
+		in the suite. The thread-count attribute is used to configure the maximum 
+		number of threads to be spawned for each suite. -->
+</suite>
