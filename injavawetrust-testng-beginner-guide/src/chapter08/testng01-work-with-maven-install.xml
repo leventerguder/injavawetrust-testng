@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Maven Suite">
+	<test name="Simple maven test">
+		<classes>
+			<class name="chapter08.Test01WorkWithMavenInstall" />
+		</classes>
+	</test>
+</suite>

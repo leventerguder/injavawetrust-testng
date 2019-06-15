@@ -1,0 +1,49 @@
+	
+	##### Using Build Tools #####
+	
+	
+	Build automation can be defined as the process of scripting and automating the compiling,
+	running, deploying, and packaging of a source code. This is applicable for every kind of
+	software language irrespective of the type. There are certain common tasks that every
+	build tool supports as part of the build automation such as cleanup, compiling, executing,
+	reporting, and publishing.
+	
+	
+	Advantages of build automation
+	
+		- Eliminates manual effort in building and deploying process
+		- Eliminates the redundant tasks
+		- Can be used to keep history of the builds made
+		- Saves time
+		- Improves product quality
+		- Build automation tools when used with continuous integration tools such
+		as Hudson, helps in schedule triggering the builds at regular intervals
+		Different
+		
+		
+	Maven
+	
+		Maven is another build tool that is commonly used by the industry as a build automation
+		tool. Maven also uses XML for build configuration and for defining build steps. The
+		advantages of using maven is that it itself maintains the dependent libraries of our project
+		once configured. The user can configure the dependent libraries on which the respective
+		project code depends upon and maven will download those JARs/libs and their dependent
+		JARs (if any) during the build process.
+		
+		Also Maven predefines some basic directory structure for project source code and test code.
+		These directories will by default be considered during the build process if not
+		explicitly configured.
+		
+		
+		
+	Following are few of the configurations that can be used with the Surefire plugin when using Maven as a build tool:
+	
+		- groups: The list of the groups to run separated by commas or spaces
+		- excludedgroups: The list of groups to be excluded from the test execution
+		- listeners: A list of comma separated by class names that implements the TestNG
+		ITestListener or IReporter and needs to be added as listener
+		- outputdir: The output directory for generation of the report
+		- parallel: The parallel mode to use either methods, classes, or tests
+		- threadCount: Number of threads that can be used for the run
+		- testname: Sets the default test name for the test
+		- timeOut: The maximum time in milliseconds within which the individual tests should get executed
