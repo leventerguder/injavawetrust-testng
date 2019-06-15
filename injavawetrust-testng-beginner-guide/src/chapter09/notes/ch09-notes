@@ -1,0 +1,28 @@
+
+	##### Logging and Reports #####
+
+
+	Reporting is the most important part of any test execution, reason being it helps the user
+	to understand the result of the test execution, point of failure, and reasons for the failure.
+	Logging, on the other hand, is important to keep an eye on the execution flow or for
+	debugging in case of any failures.
+	
+	
+	TestNG by default generates a different type of report for its test execution. This includes an
+	HTML and an XML report output. TestNG also allows its users to write their own reporter and
+	use it with TestNG. There is also an option to write your own loggers, which are notified at
+	runtime by TestNG.
+	
+	There are two main ways to generate a report with TestNG:
+	
+		- Listeners: For implementing a listener class, the class has to implement the org.testng.ITestListener interface.
+		These classes are notified at runtime by TestNG when the test starts, finishes, fails, skips, or passes.
+		
+		- Reporters: For implementing a reporting class, the class has to implement an org.testng.IReporter interface.
+		These classes are called when the whole suite run ends. 
+		The object containing the information of the whole test run is passed to this class when called.
+		
+	if you want to generate a custom HTML report at the end
+	of execution then you should implement IReporter interface while writing extension. But
+	in case you want to update a file at runtime and have to print a message as and when the
+	tests are getting executed, then we should use the ITestListener interface.

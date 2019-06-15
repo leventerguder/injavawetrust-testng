@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Simple Logger Suite">
+	<listeners>
+		<listener class-name="chapter09._01.customlogger.CustomLoggerListener" />
+	</listeners>
+	<test name="Simple Logger test">
+		<classes>
+			<class name="chapter09._01.customlogger.Test01Simple" />
+		</classes>
+	</test>
+</suite>
