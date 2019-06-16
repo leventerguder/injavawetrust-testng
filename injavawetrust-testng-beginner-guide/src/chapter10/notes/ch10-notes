@@ -1,0 +1,12 @@
+
+	##### Creating a Test Suite through Code #####
+
+
+	XmlSuite Defines a simple XML suite tag of the testng XML
+	XmlTest Describes a test tag of the testng XML
+	XmlPackage Describes a package tag in the testng XML
+	XmlClass Describes a class tag in the testng XML
+	XmlGroups Describes the groups tag of the testng XML
+	XmlInclude Describes an include tag of the testng XML
+	XmlDefine Describes a define tag of the testng XML, which is used for defining a group of groups
+	XmlDependencies Describes a dependencies tag of the testng XML, which is used for defining group dependencies
