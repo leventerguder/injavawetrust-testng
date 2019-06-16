@@ -1,0 +1,110 @@
+
+	##### Unit and Functional Testing #####
+	
+	#####  Assertion with TestNG ##### 
+
+	Assertion plays an important part while performing unit testing. Assertion helps you to check
+	or verify the success of conditions in your test. If the conditions don't satisfy, it will stop the
+	test execution of the said test and mark it as failing.
+	
+	
+	Assertions are basically code blocks that can be placed in test cases to verify certain
+	conditions. Most of the unit test frameworks provide implementations for using assertions
+	in the tests. TestNG supports assertion of a test using the Assert class which is part of the
+	library. The following table describes few of the methods and their usage that are available
+	with the Assert class in testng:
+	
+	
+	assertEquals(boolean actual,boolean expected)
+	Takes two Boolean arguments and checks whether both are equal else fails the test
+	
+	assertEquals(boolean actual,boolean expected, java.lang.String message)
+	Takes two Boolean arguments and checks whether both are equal else fails the test with the given message.
+	
+	assertEquals(java.lang.String actual, java.lang.String expected, java.lang.String message)
+	Takes two string arguments and verifies that both are equal. 
+	In case they are not equal this method fails the test with the given message.
+	
+	assertEquals(java.util.Collection actual, java.util.Collection expected, java. lang.String message)
+	Takes two collection objects and verifies both of the collections contain the same elements and in the same order. 
+	Else this fails the test with the given message.
+	
+	assertTrue(boolean condition,java.lang.String message)
+	Verifies that the passed condition variable is true else fails the test with the given message.
+	
+	assertFalse(boolean condition, java.lang.String message)
+	Verifies that the passed condition variable is false else fails the test with the given message.
+	
+	fail(java.lang.String message) 
+	Directly fails a test with the given message.
+	This method is mainly used while handling exception conditions and when we have failed the test forcefully.
+	
+	
+	#####  Mocking #####
+	
+	Mocking is mainly used while performing unit testing. While writing unit tests, the code
+	under test may depend on another class object or class method in the code. This dependent
+	code may or may not be available for testing. To isolate the behavior of the code under test
+	from that of the dependent code we use the mocking technique.
+	
+	Mocking allows users to create mock objects and behaviors that the code under test is
+	dependent upon. Mock objects basically simulate the behavior of the dependent code
+	so that the unit testing of the code under test can be completed.
+	
+	
+	There are a lot of mocking utilities available online for mocking while writing unit tests
+	developed in Java. Each has some advantages and disadvantages when compared to
+	other. Few of the mocking utilities are named as follows:
+	
+	- Jmock
+	- Mockito
+	- EasyMock
+	- PowerMock
+	- Jmockit
+	
+	
+	#####  Mocking with TestNG #####
+	
+	TestNG don�t have an inbuilt mocking implementation in it, but we can use any third-party
+	implementations that are based on Java; and which don�t rely on a particular kind of unit
+	test execution framework to be used along with it. You had already read about mocking
+	and different mocking techniques that are available in the market. 
+	
+	##### Functional testing #####
+	
+	Functional testing is a process of testing software or a hardware based on its design or
+	specification. It involves testing different features and functionalities provided by software
+	or hardware based on its requirement. It mainly consists of integration scenarios to verify
+	that the feature works well with other features and does not fail in any condition.
+	
+	In the software industry functional testing plays a key role in the life cycle of testing as it
+	confirms the product requirement and design specifications, and helps in identifying bugs
+	in the software. Functional testing is performed manually as well as through automation
+	tools. Automation may involve writing unit test methods for the application code as well as
+	the use of some functional automation tools. Functional test methods are different from that
+	of unit test methods. They are different in a way that unit test methods are meant to test an
+	independent part of the code, whereas functional tests are written to check the functionality
+	and may involve interaction between different sections of code. When it comes to functional
+	automation tools there is a huge list of such tools in the market. These tools help in
+	automating the functional tests and hence reduces the manual and periodic testing effort.
+	The following is a list of functional testing automation tools that are available in the market:
+	
+	- Selenium/Webdriver
+	- Rational functional tester
+	- Sikuli
+	- Quick Test Professional
+	- SilkTest
+	
+	
+	TestNG with Selenium
+	Nowadays Selenium is one of the most famous functional testing tools used for web based
+	application testing. Selenium has a lot of features inbuilt in it, which helps web application
+	testing teams to automate their functional test cases. The following is a list of a few such features of Selenium:
+	
+	- Provides record and playback capabilities
+	- Supports multiple browsers and browser versions. For example, Firefox, Chrome, IE, Opera, and so on
+	- Inbuilt support for Android and iOS testing
+	- Inbuilt grid setup for setting up a Selenium server grid for simultaneous or parallel execution of tests
+	- Easy API for easy use and enhancement
+	
+	
