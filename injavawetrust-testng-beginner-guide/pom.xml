@@ -15,6 +15,22 @@
 					<release>10</release>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<!-- the plugin maven-surefire-plugin is used to configure and execute 
+					the tests. -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+
+					<!-- Suite testng xml file to consider for test execution -->
+					<suiteXmlFiles>
+						<suiteXmlFile>src/chapter08/testng01-work-with-maven-install.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<parallel>true</parallel>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
