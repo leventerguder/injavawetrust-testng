@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Junit Testng Suite">
+	<test junit="true" name="Junit test">
+		<classes>
+			<class name="chapter11.junit.Test01SimpleJunit" />
+		</classes>
+	</test>
+	<test name="Testng test">
+		<classes>
+			<class name="chapter11.junit.Test02SimpleTestNG" />
+		</classes>
+	</test>
+
+	<!-- We have created a sample testng XML configuration file to run JUnit 
+		and TestNG tests together through TestNG. Attribute junit is used along with 
+		the test tag for the test containing the JUnit test class to configure TestNG 
+		to run the said junit tests. The other test is a simple TestNG test that 
+		contains a testng test class for the test execution -->
+</suite>

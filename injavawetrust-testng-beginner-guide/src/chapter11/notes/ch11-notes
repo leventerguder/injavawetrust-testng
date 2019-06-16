@@ -1,0 +1,9 @@
+
+	##### Migrating from JUnit #####
+	
+	Running your JUnit Tests through TestNG using the testng XML
+	TestNG can be configured to run JUnit tests using the testng XML configuration file. 
+	The said configuration can be done at both suite and test tag level in a testng XML configuration file.
+	
+	<test junit="true" name="Simple JUnit test">
+	

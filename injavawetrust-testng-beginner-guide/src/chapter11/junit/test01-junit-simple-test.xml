@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Simple JUnit Suite">
+	<test junit="true" name="Simple JUnit test">
+		<classes>
+			<class name="chapter11.junit.Test01SimpleJunit" />
+		</classes>
+	</test>
+</suite>
